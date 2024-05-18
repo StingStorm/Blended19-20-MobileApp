@@ -1,0 +1,248 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff;
+}
+
+h2.section-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+}
+
+h3.section-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+p.card-descr {
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.71;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+.section-testimonial {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-image: url(../img/testimonial/vectors-desktop@1x.png);
+  background-size: cover;
+  background-position-y: 55%;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.container-testimonial {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.customer-header {
+  text-align: center;
+  align-items: center;
+  margin-bottom: 40px;
+  height: 29px;
+}
+
+.customer-item {
+  text-align: center;
+  align-items: center;
+}
+
+.customer-img {
+  width: 181px;
+  height: 181px;
+  object-fit: cover;
+  margin: 0 auto 20px;
+}
+
+h3.customer-name {
+  color: #000000;
+  height: 22px;
+  margin-bottom: 12px;
+}
+
+p.customer-company {
+  color: #000;
+  margin-bottom: 40px;
+}
+
+p.customer-opinion {
+  max-width: 886px;
+  margin: 0 auto;
+  overflow: hidden;
+  max-height: 160px;
+}
+
+.slick-list {
+  margin-bottom: 64px;
+}
+
+.slick-dots {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.slick-dots ul {
+  display: flex;
+}
+
+.slick-dots li {
+  margin: 0 8px;
+  height: 6px;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  border: none;
+  height: 10px;
+  width: 10px;
+  background-color: transparent;
+  padding: 0;
+  position: relative;
+}
+
+.slick-dots li button::after {
+  content: ' ';
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6' viewBox='0 0 6 6'><circle cx='3' cy='3' r='3' fill='%23939EAC' /></svg>");
+  fill: #939eac;
+  cursor: pointer;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -1px;
+  left: 2px;
+}
+
+.slick-dots li button:hover::after {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6' viewBox='0 0 6 6'><circle cx='3' cy='3' r='3' fill='%2306071b' /></svg>");
+}
+
+/* Отмечаем активный кружок */
+.slick-dots li.slick-active button::after {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6' viewBox='0 0 6 6'><circle cx='3' cy='3' r='3' fill='%2306071b' /></svg>");
+}
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+  .section-testimonial {
+    background-image: url(../img/testimonial/vectors-desktop@2x.png);
+  }
+}
+@media screen and (max-width: 1279px) and (min-resolution: 96dpi) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .container-testimonial {
+    padding-bottom: 60px;
+  }
+  .section-testimonial {
+    background-image: url(../img/testimonial/vectors-tablet@1x.png);
+  }
+  p.customer-opinion {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 1279px) and (min-resolution: 192dpi) {
+  .section-testimonial {
+    background-image: url(../img/testimonial/vectors-tablet@2x.png);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 96dpi) {
+  .container {
+    max-width: 320px;
+    padding: 0 20px;
+  }
+  .container-testimonial {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .section-testimonial {
+    background-image: url(../img/testimonial/vectors-mobile@2x.png);
+  }
+  h2.section-title {
+    font-size: 20px;
+  }
+  .customer-header {
+    max-width: 179px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.2;
+  }
+  p.customer-opinion {
+    font-size: 14px;
+    line-height: 1.43;
+    max-width: 100%;
+  }
+  .slick-list {
+    margin-bottom: 40px;
+  }
+  .slick-track {
+    display: flex;
+    max-height: 100%;
+    box-sizing: border-box;
+  }
+  .customer-img {
+    margin: 0 auto 20px;
+  }
+  p.customer-company {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .section-testimonial {
+    background-image: url(../img/testimonial/vectors-mobile@2x.png);
+  }
+}
