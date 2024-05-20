@@ -30,14 +30,14 @@ Global
 ========================== */
 
 .container {
-  max-width: 310px;
-  padding: 0 15px;
+  max-width: 320px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 736px;
     padding: 0 16px;
   }
 }
