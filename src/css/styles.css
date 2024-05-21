@@ -1,6 +1,5 @@
 @import url('./reset.css');
 @import url('./general.css');
-@import url('./testimonial.css');
 /* Header import */
 
 /* Features import */
@@ -10,7 +9,7 @@
 /* Team import */
 
 /* Testimonials import */
-
+@import url('./testimonial.css');
 /* Download Modal Menu import */
 
 /* Mobile Navigation Modal Menu import */
