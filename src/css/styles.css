@@ -1,5 +1,6 @@
 @import url('./reset.css');
 @import url('./general.css');
+@import url('//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
 /* Header import */
 
 /* Features import */

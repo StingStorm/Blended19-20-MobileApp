@@ -1,4 +1,4 @@
-$(".customer-list").slick({
+$('.customer-list').slick({
   dots: true,
   infinite: true,
   autoplay: false,
